@@ -1,4 +1,5 @@
 class Stack:
+
     def __init__(self):
         self.items = []
 
@@ -19,15 +20,14 @@ class Stack:
 
 
 if __name__ == "__main__":
-    userstring=input("Enter the string: ")
+    userstring = input("Enter the string: ")
     import re
-    if re.search(r"^[(][()]+[)]$",userstring):
-        # print("valid")
-        userstring= list(userstring)
-        obj=Stack()
+    if re.search(r"^[(][()]+[)]$", userstring):
+        userstring = list(userstring)
+        obj = Stack()
         for elem in userstring:
 
-            if elem=="(":
+            if elem == "(":
                 obj.push(elem)
 
             else:
@@ -36,8 +36,9 @@ if __name__ == "__main__":
                 except Exception:
                     print("Invalid opening and closing of brackets")
                     exit()
-        if obj.isEmpty() :
+        if obj.isEmpty():
             print("It is valid string.")
         else:
             print("String is invalid")
-    else:exit()
+    else:
+        exit()
