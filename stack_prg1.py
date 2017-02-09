@@ -26,15 +26,13 @@ if __name__ == "__main__":
         userstring= list(userstring)
         obj=Stack()
         for elem in userstring:
-            # print(elem)
+
             if elem=="(":
                 obj.push(elem)
-                # print(obj.size())
-                # print(obj.peek())
+
             else:
                 try:
                     obj.pop()
-                    # print(obj.size())
                 except Exception:
                     print("Invalid opening and closing of brackets")
                     exit()
