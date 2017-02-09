@@ -1,5 +1,5 @@
 def SuperASCII(userdict, SuperAsciiDict):
-    for i in userinput:
+    for i in userdict.keys():
         if userdict[i] == SuperAsciiDict[i]:
             continue
         else:
