@@ -37,7 +37,6 @@ if __name__ == "__main__":
                     # print(obj.size())
                 except Exception:
                     print("Invalid opening and closing of brackets")
-
                     exit()
         if obj.isEmpty() :
             print("It is valid string.")
