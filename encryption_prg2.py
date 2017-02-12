@@ -9,7 +9,7 @@ def encryption(userinput, mylist):
 
 
 if __name__ == "__main__":
-    userinput = input("Enter the input: ")
+    userinput = input("Enter the input: ").upper()
     mylist = []
     for i in range(26):
         mylist.append(chr(ord('A') + i))
